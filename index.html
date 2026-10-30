@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hans（Cabbage6205）的個人作品集：低光影像處理、ByteTrack 物件追蹤與 K3s 多節點建置。">
+  <meta name="theme-color" content="#f6f5f4">
+  <meta property="og:title" content="Hans — 從影像到系統">
+  <meta property="og:description" content="影像處理、物件追蹤與系統部署的實作紀錄。">
+  <meta property="og:type" content="website">
+  <title>Hans — 從影像到系統</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <header class="wrap header">
+    <a class="identity" href="#main" aria-label="Hans 首頁"><span class="mark" aria-hidden="true">h.</span><span>Hans <span class="muted">/ Cabbage6205</span></span></a>
+    <nav aria-label="主要導覽"><a href="#work">作品</a><a href="#about">關於</a><a href="https://github.com/Cabbage6205">GitHub ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">PERSONAL NOTES & SELECTED WORK</p>
+        <h1 id="intro-title">Hi, I'm <em>Hans.</em></h1>
+        <p class="hero-title">從影像到系統，<br>把想法一步步做出來。</p>
+        <p class="intro">這裡收錄我在影像處理、物件追蹤與系統部署上的實作，以及讓實驗能夠被重現的過程。</p>
+        <a class="primary" href="#work">探索我的作品 <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="index" aria-label="作品方向">
+        <div class="index-top"><span>FIELD NOTES</span><span>01 — 03</span></div>
+        <p class="index-heading">看見細節。<br>理解流程。<br><span>讓它運作。</span></p>
+        <div class="index-bottom"><span>Computer vision</span><span>Infrastructure</span><span>Reproducibility</span></div>
+      </aside>
+    </section>
+    <section class="works" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">SELECTED WORK</p><h2 id="work-title">實作與探索</h2></div><p class="muted">從公開專案出發，記錄解題的路徑。</p></div>
+        <article class="project">
+          <div class="number">01 / VISION</div>
+          <div><h3>讓低光影像，帶出更多線索。</h3><p>以 LIME、Gamma LUT、小波與導向濾波串接低光前處理，再接上行人候選框、精修與人數聚合，整理成可執行的完整流程。</p><ul class="tags" aria-label="技術主題"><li>Low-light enhancement</li><li>Wavelet</li><li>Pedestrian detection</li></ul></div>
+          <a class="source" href="https://github.com/Cabbage6205/fast_lowlight_wavelet" aria-label="查看低光影像專案原始碼">查看專案 ↗</a>
+        </article>
+        <article class="project">
+          <div class="number">02 / TRACKING</div>
+          <div><h3>從論文方法，到可重現的環境。</h3><p>記錄 YOLOX 與 ByteTrack 的環境建置、依賴相容性處理及推論流程，涵蓋 macOS 與 Ubuntu GPU 部署的實作筆記。</p><ul class="tags" aria-label="技術主題"><li>ByteTrack</li><li>YOLOX</li><li>Deployment notes</li></ul></div>
+          <a class="source" href="https://github.com/Cabbage6205/ByteTrack-replicated" aria-label="查看 ByteTrack 環境重現專案">查看專案 ↗</a>
+        </article>
+        <article class="project">
+          <div class="number">03 / SYSTEMS</div>
+          <div><h3>把視野，延伸到系統背後。</h3><p>K3s 多節點建置專案，探索輕量化 Kubernetes 與多節點環境的實作。</p><ul class="tags" aria-label="技術主題"><li>K3s</li><li>Kubernetes</li><li>Multi-node</li></ul></div>
+          <a class="source" href="https://github.com/Cabbage6205/k3s_multi_node" aria-label="查看 K3s 多節點專案">查看專案 ↗</a>
+        </article>
+        <a class="all-work" href="https://github.com/Cabbage6205?tab=repositories">更多程式與筆記，在 GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="wrap about" id="about" aria-labelledby="about-title">
+      <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2 id="about-title">你好，我是 Hans。<br><span class="muted">也可以叫我 Cabbage。</span></h2></div>
+      <div><p>我的公開專案從影像增強、行人偵測與追蹤，延伸到多節點系統建置。這個網站把這些不同方向的實作，放在同一份持續累積的紀錄裡。</p><p>如果你對其中的程式或實驗流程有興趣，歡迎到 GitHub 看看原始碼與說明文件。</p><a class="primary" href="https://github.com/Cabbage6205">在 GitHub 找到我 <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>© 2026 Hans · abigCabbage</span><span>Built with curiosity. Kept simple.</span><a href="#main">回到頂端 ↑</a></footer>
+</body>
+</html>
